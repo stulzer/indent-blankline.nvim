@@ -106,7 +106,7 @@ M.setup = function()
             underline = string.format("@ibl.scope.underline.%d", i),
         }
         vim.api.nvim_set_hl(0, M.scope[i].char, char_hl)
-        vim.api.nvim_set_hl(0, M.scope[i].underline, { sp = char_hl.fg, underline = true })
+        vim.api.nvim_set_hl(0, M.scope[i].underline, { standout = true })
     end
 end
 
